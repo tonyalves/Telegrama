@@ -24,7 +24,7 @@ public class SendMessage {
 		boolean isCommand = update.getMessage().getEntities().get(0).getType().equals("bot_command") ? true : false ;
 		String text = "Comando inválido.\nLista de comandos:\n\n/cafe - Quem compra o café.\n/pao - Quem compra o pão.";
 		if(isCommand){
-			String command = update.getMessage().getText();
+			String command = update.getMessage().getText().split(" ")[0];
 			ICommand commandAction ;
 			switch (command) {
 			case "/pao":

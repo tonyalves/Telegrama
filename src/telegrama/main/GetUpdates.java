@@ -108,6 +108,7 @@ public class GetUpdates {
 						}
 					}
 				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 		}
