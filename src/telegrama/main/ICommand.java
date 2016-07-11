@@ -1,5 +1,5 @@
 package telegrama.main;
 
 public interface ICommand {
-	String doAction();
+	String doAction(Update update);
 }

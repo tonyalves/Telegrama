@@ -29,7 +29,7 @@ public class SendMessage {
 			switch (command) {
 			case "/pao":
 				commandAction = new PaoCommand();
-				text = commandAction.doAction();
+				text = commandAction.doAction(update);
 				break;
 
 			default:
